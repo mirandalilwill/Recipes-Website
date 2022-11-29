@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: black;
+    margin-top: 20px;
+}
+
+img {
+    width: 33%;
+    margin: calc(1%/6);
+}
+
+img:hover {
+    box-shadow: 0 0 2vw .08vw rgb(59, 43, 43);
+    transition-duration: 1s;
+    transition: 0.75s;
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+div nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: .3em .4em 0.2em;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5em;
+    align-items: baseline;
+}  
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: Abril Fatface, sans-serif;
+}
+
+nav a:hover {
+    color: rgb(249, 208, 168);
+    transition: .3s;
+    transform: translateY(-0.1em);
+    
+}
+
+nav a:active {
+    background-color: rgb(44, 0, 0);
+    transition: 0.2s;
+}
+
+#logo {
+    font-family: Permanent Marker, sans-serif;
+    font-size: 1.8em;
+}
+
+#logo:hover {
+    color: rgb(230, 107, 132);
+    transition: .4s;
+    transform: translateY(-0.1em);
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: .9em
+    }
+    img {
+        width: 45%;
+        margin: calc(10%/4.3)
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        font-size: .7em
+    }
+    img {
+        width: 95%;
+        margin: calc(5%/2.1);
+    }
+}

@@ -1,0 +1,32 @@
+body {
+background: left/cover no-repeat url("wine.jpg");
+height: 100vh;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+}
+
+button {
+    font-family: Abril Fatface, sans-serif;
+    letter-spacing: 1.5px;
+    background: none;
+    color:rgb(100, 0, 0);
+    border: 3px hidden;
+    padding: .8em 1.8em;
+    font-size: 2em;
+    transition: 0.2s;
+}
+
+button:hover {
+    border-color:rgb(255, 176, 230);
+    color: rgb(253, 199, 233);
+    box-shadow: 0 0.5em 0.5em -0.2em rgb(249, 139, 185);
+    transform: translateY(-0.2em);
+    cursor: pointer;
+}
+

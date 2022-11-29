@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: black;
+    margin-top: 20px;
+}
+
+div nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: .3em .4em 0.2em;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5em;
+    align-items: baseline;
+}  
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: Abril Fatface, sans-serif;
+}
+
+nav a:hover {
+    color: rgb(249, 208, 168);
+    transition: .3s;
+    transform: translateY(-0.1em);
+    
+}
+
+nav a:active {
+    background-color: rgb(44, 0, 0);
+    transition: 0.1s;
+}
+
+#logo {
+    font-family: Permanent Marker, sans-serif;
+    font-size: 1.8em;
+}
+
+#logo:hover {
+    color: rgb(230, 107, 132);
+    transition: .4s;
+    transform: translateY(-0.1em);
+}
+ 
+h1 {
+    color: white;
+    font-family: Abril Fatface;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#contactform {
+    color: white;
+    font-family: Abril Fatface;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding-top: 10px;
+    margin-bottom: 200px;
+}
+
+div label {
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: left;
+    margin: 10px 0;
+}
+ div input {
+    padding: 5px;
+    margin: 8px;
+    border-radius: 10%;
+    border: 1px solid rgb(253, 159, 212);
+ }
+
+ textarea {
+    padding: 5px;
+    margin: 0px 5px;
+    border: 1px solid rgb(230, 107, 132);
+ }
+
+ button {
+    background-color: rgb(252, 133, 169);
+    color: white;
+    font-family: Permanent Marker;
+    padding: 5px 10px;
+    margin: 15px 100px 5px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 0.5em;
+ }
+
+ button:hover {
+    box-shadow: 0.2em 0.5em 0.5em -0.2em rgb(218, 249, 139);
+    border: 2px solid rgb(109, 245, 252);
+    color: aqua;
+    transform: translateY(-0.2em);
+    scale: 1.1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
